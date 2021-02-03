@@ -372,4 +372,5 @@ endfunction
 com! -nargs=? -complete=customlist,<SID>listDirs CscopeClear call <SID>clearDBs("<args>")
 
 com! -nargs=0 CscopeList call <SID>listDBs()
+com! -nargs=0 CscopeUpdate call CscopeUpdateDB()
 call <SID>loadIndex()
